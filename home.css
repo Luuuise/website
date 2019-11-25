@@ -1,0 +1,245 @@
+/*		home page 	*/
+
+.mosaic {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	width: auto;
+	height: auto;
+}
+
+/* Cards bg */
+
+.bg-styx {
+	background-image: url('./images/project_cover/project_cover_styx.jpg');
+}
+
+.bg-coucou {
+	background-image: url('./images/project_cover/project_cover_coucou.jpg');
+}
+
+.bg-luvli {
+	background-image: url('./images/project_cover/project_cover_luvli.jpg');
+}
+.bg-idm {
+	background-image: url('./images/project_cover/project_cover_IDM.jpg');
+}
+
+.bg-ricard {
+    background-image: url('./images/project_cover/project_cover_ricard.jpg');
+}
+
+.bg-fetiche {
+    background-image: url('./images/project_cover/project_cover_fetiche.jpg');
+}
+
+.bg-unfiltered {
+	background-image: url('./images/project_cover/project_cover_unfiltered.jpg');
+}
+
+.bg-une-semaine {
+	background-image: url('./images/project_cover/project_cover_une-semaine.jpg');
+}
+
+/* Card general behavior */
+
+.parent {
+	width: 100%;
+	min-width: 300px;
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.bg-card {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.parent a { display: none; }
+
+.bg-card::before {
+	display: none;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 193, 7);
+	mix-blend-mode: multiply;
+}
+
+.parent:hover .bg-card:before {
+	display: block;
+}
+
+.parent:hover .bg-card {
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+
+	background-size: 100%;
+	transition-timing-function: ease-in;
+
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.parent:hover a {
+	display: block;
+	z-index: 2;
+	color: white;
+	font-size: 2em;
+	font-family: poppins;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2em;
+	text-decoration: none;
+}
+
+/*.bg-img-fetiche {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_fetiche.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.bg-img-fetiche:hover {
+	transition-duration: 0.8s;
+
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_fetiche_hover.jpg');
+    }
+
+
+.bg-img-unfiltered {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_unfiltered.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.bg-img-unfiltered:hover {
+	transition-duration: 0.8s;
+
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_unfiltered_hover.jpg');
+    }
+
+
+.bg-img-luvli {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_luvli.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   height:300px;
+}
+.bg-img-luvli:hover {
+	transition-duration: 0.8s;
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_luvli_hover.jpg');
+}
+
+
+.bg-img-une-semaine {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_une-semaine.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  height:300px;
+}
+.bg-img-une-semaine:hover {
+	transition-duration: 0.8s;
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_une-semaine_hover.jpg');
+}
+
+
+.bg-img-idm {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_IDM.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.bg-img-idm:hover {
+	transition-duration: 0.8s;
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_IDM_hover.jpg');
+}
+
+.bg-img-ricard {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_ricard.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.bg-img-ricard:hover {
+	transition-duration: 0.8s;
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_ricard_hover.jpg');
+}
+
+/*.bg-img-coucou {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./images/project_cover/project_cover_coucou.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.bg-img-coucou:hover {
+	transition-duration: 0.8s;
+	background-size: cover;
+    background-image: url('./images/project_cover/project_cover_coucou_hover.jpg');
+}
+*/
+
+*/

@@ -1,0 +1,92 @@
+<head>
+	<title>Louise Colin / Portfolio</title>
+</head>
+
+.justify-content-center{
+	align-items: center;
+	align-content: center;
+	display:flex;
+	}
+
+.container{
+	align-self: center;
+	/* width: 1200px; */
+	justify-content: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+	color: rgb(50,50,50);
+	letter-spacing: 0.8px;
+	line-height: 2;
+	img-width: 100%;
+}
+
+.row {
+	margin-top: 72px;
+	margin-bottom: 72px;
+}
+
+/*Header*/
+
+.header {
+	justify-content: space-between;
+	padding: 0px 16px 200px 16px;
+	font-family: Avenir;
+}
+
+.header h1 {
+  font-weight: bolder;
+  font-size: 2em;  
+}
+
+.header h2 {
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+.header a, .footer a{
+	color: rgb(50,50,50);
+	margin: 16px 0px 16px 0px; 
+	cursor: pointer;
+}
+
+.header a:hover, .footer a:hover {
+	color: rgb(50,50,50);
+	text-decoration: none;
+}
+
+.logo {
+	display : block;
+	top:0px;
+	text-decoration: none;
+}
+
+/*	navigation	*/
+
+.nav {
+	justify-content: space-between;
+	flex-basis: 230px;
+	align-content: center;
+}
+
+.menu:hover{
+	font-weight: bolder;}
+
+.menu:active{
+	font-weight: bolder;
+}
+
+/*	footer	*/
+
+.footer{
+	padding-top: 56px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social_media{
+	font-family: sans-serif;
+	font-size: 1.6em;
+	font-weight: 900;
+}
+	
+}

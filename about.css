@@ -1,0 +1,40 @@
+/* 		about 		*/
+.decoration {
+	border-top: rgb(255,216,0) 10px solid;
+	margin-left: -50vw;
+	max-width: 84vw;
+	position: relative;
+	right: 50%;
+	}
+
+.about{
+	font-family: Avenir;
+	/* font-weight: bolder; */
+	font-size: 3.6em;
+	line-height: normal;
+	/* margin: 0px; */
+	color: rgb(50,50,50);
+	display: block;
+}
+
+.btn {
+	background-color: rgb(255,216,0);
+	width:20%;
+	height: 100%;
+	font-family: poppins;
+	font-weight: bold;
+	font-size: 3em;
+	color:white;
+	/* justify-content: center; */
+	/* display: flex; */
+}
+.glyphicon {
+	font-family: poppins;
+	font-size: large;
+	color: aqua;
+}
+
+.btn:hover{
+	color:white;
+}
+

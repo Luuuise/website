@@ -50,6 +50,7 @@
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 3px;
+
 }
 
 .bg-card {
@@ -63,7 +64,11 @@
 	background-position: center;
 }
 
-.parent a { display: none; }
+.parent a { display: none; 
+text-align: center;
+position: absolute;
+padding-top: 45%;
+	}
 
 .bg-card::before {
 	display: none;
@@ -98,15 +103,19 @@
 }
 
 .parent:hover a {
+	width:100%;
+	height:100%;
 	display: block;
 	z-index: 2;
 	color: white;
 	font-size: 2em;
 	font-family: poppins;
 	font-weight: bold;
-	text-align: center;
+	
 	line-height: 1.2em;
 	text-decoration: none;
+	
+	
 }
 
 /*.bg-img-fetiche {

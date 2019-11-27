@@ -32,16 +32,19 @@
 	justify-content: space-between;
 	padding: 0px 16px 200px 16px;
 	font-family: Avenir;
+	align-items: center;
 }
 
 .header h1 {
   font-weight: bolder;
-  font-size: 2em;  
+  font-size: 1.8em; 
+  line-height: 1em; 
 }
 
 .header h2 {
   font-weight: lighter;
-  font-size: 1.1em;
+  font-size: 1em;
+  margin:0px;
 }
 
 .header a, .footer a{
@@ -84,10 +87,17 @@
 	justify-content: space-between;
 }
 
-.social_media{
+.social_media {
 	font-family: sans-serif;
 	font-size: 1.6em;
 	font-weight: 900;
 }
-	
+
+.social_media a {
+	color: dark-grey;
+}
+.bg-footer{
+	background-color: rgb(247, 219, 4);
+	padding: 0px 0px 80px 60px;
+	display:block
 }

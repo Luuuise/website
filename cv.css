@@ -1,0 +1,19 @@
+<head>
+	<title>Louise Colin / Portfolio</title>
+</head>
+
+
+
+.container {
+	width:90%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+	color: rgb(50,50,50);
+	letter-spacing: 0.8px;
+	line-height: 2;
+	display:block;
+}
+
+.col-sm-4 img{
+	width:100%;
+}

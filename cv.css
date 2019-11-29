@@ -2,18 +2,93 @@
 	<title>Louise Colin / Portfolio</title>
 </head>
 
+*{
+  margin: 0;
+  padding: 0;
+  height: 700px;
+}
 
+body {
+	 overflow-x: hidden;
+}
 
 .container {
-	width:90%;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.1em;
+	width:95%;
+	font-family: IBM Plex Sans;
+	font-size: 0.9em;
 	color: rgb(50,50,50);
 	letter-spacing: 0.8px;
-	line-height: 2;
 	display:block;
 }
 
-.col-sm-4 img{
+.col-sm-2 {
+	display: flex;
+    flex-direction: column;
+    border-left: rgb(255,204,0) 10px solid;
+    padding: 0px 0px 0px 15px;
+    font-weight: bold;
+    font-size: 0.7em;
+    height: 100%;
+    flex-flow: wrap;
+
+}
+.col-sm-4 {
+	display: flex;
+    align-items: flex-end;
+	flex-direction: row;
+}
+.col-sm-10 { 
+	align-self:flex-end;
+	padding-right: 20px
+}
+
+.col-sm-10 img{
 	width:100%;
+}
+
+.exp p {
+	border-top: rgb(50,50,50) 1px solid;
+	padding-top: 10px;
+}
+
+p {
+	/*font-size: 0,8em;*/
+	font-weight:lighter;
+	
+}
+
+a {
+	color: rgb(50,50,50);
+}
+
+a:hover{
+	color: rgb(50,50,50);
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Bebas neue;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 30px 0px 20px 0px;
+	
+}	
+
+h2 {
+	font-weight: 900;
+	font-size: 1.2em;
+	margin: 20px 0px 5px 0px;
+}
+
+.details{
+	
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.contact { display: flex; }
+.contact h2, h3 {
+	color: rgb(255,204,0);
+	font-family: Bebas neue;
+	font-size: 3em;
 }

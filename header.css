@@ -97,7 +97,8 @@
 	color: dark-grey;
 }
 .bg-footer{
-	background-color: rgb(247, 219, 4);
+	background-color: rgb(230,230,230);
 	padding: 0px 0px 80px 60px;
-	display:block
+	display:block;
+	height:	300px;
 }

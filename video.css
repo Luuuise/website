@@ -1,0 +1,65 @@
+<head>
+	<title>Louise Colin / Portfolio</title>
+</head>
+
+}
+/* global content */
+
+.container {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+	color: rgb(50,50,50);
+	letter-spacing: 0.8px;
+	line-height: 2;
+}
+
+.row {
+	margin-top: 88px;
+	margin-bottom: 88px;
+	justify-content: center;
+	display: flex;
+}
+
+.video {
+	position: relative;
+	display : flex;
+	align-items: center;
+	width:300px;
+}
+
+#videoPlayer{
+
+	/*position: absolute;*/
+    display: flex;
+    top:0;
+    width:100%;
+    left:0;
+    z-index: 0;
+}
+
+button{
+	position: absolute;
+    top: 289px;
+    left: 123px;
+    z-index: 1;
+    
+   
+    border-radius: 53px;
+ 	width: 70px;
+ 	height: 70px;
+    
+
+    font-family: poppins;
+    font-weight: bolder;
+    font-size:2em;
+    padding-left: 15px;
+    padding-top: 6px;
+    background-color:red;
+    color:white;
+    border:none;
+
+  }
+
+  button:active {
+  	display:none;
+  }
